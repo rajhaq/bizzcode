@@ -1,1 +1,98 @@
-test
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home | BizzCode</title>
+		<meta charset="utf-8">
+         <link rel="shortcut icon" href="images/favicon.ico" />
+        <link rel="stylesheet" href="style.css">
+        <!-CSS from w3 school for slider-->
+		<link rel="stylesheet" href="w3.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<div class="logo">
+					<a href="index.html"><img src="images/bizzcode.png" alt="LOGO"></a>
+				</div>
+				<div class="navbar">
+					<div class="navigation">
+						<a href="index.html">
+                            <div class="selected">
+							Home
+                            </div>
+                        </a>
+                        <a href="about.html">
+                            <div class="nav">
+                            About
+                            </div>
+						</a>
+                        <a href="contact.html">
+                            <div class="nav">
+                            Contact
+                            </div>
+                        </a>
+                    </div>
+                </div>
+			</div>
+			<!-Slider --->
+			<div class="raw">
+				<div class="w3-content w3-section" style="max-width:1000px">
+					<img class="mySlides" src="images/slide1.jpg" style="width:100%">
+					<img class="mySlides" src="images/slide2.jpg" style="width:100%">
+					<img class="mySlides" src="images/slide3.jpg" style="width:100%">
+				</div>
+			</div>	
+			<!-About --->
+			<div class="raw">
+                <div class="margin">
+                    <h1>Bizz<b>Code</b></h1>
+                    <div class="line"></div>
+                    <p>BizzCode is a creative tech startup in Bangladesh. They offer smart and competitive solutions, including world-class websites, web applications and dedicated support. They have 5 crewsand want to recruit other creativecrew.</p>
+                </div>
+			</div>				
+			<!-Button --->
+			<div class="raw">
+				<div class="cta">
+			<a class="ghost-button" href="#">Start Your Project</a>
+			
+                </div>
+            </div>
+            <!-footer --->
+            <div class="raw">
+                <div class="footer">
+                    <ul class="links">
+                        <li>
+                            <a href=""><img src="images/facebook-3-128.png"/></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/twitter-128.png"/></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/google-plus-3-128.png"/></a>
+                        </li>
+
+                    </ul>
+                    <p class="footnote">
+                        © BizzCode 2017
+                    </p>
+                </div>
+            </div>
+		</div>
+        <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2500); // Change image every 2 seconds
+        }
+        </script>
+	</body>
+</html>
