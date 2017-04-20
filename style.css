@@ -164,3 +164,16 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
+
+.categories {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+.categories li {
+    float: left;
+    width: 33%;
+    text-align: center;
+    padding: 8px;
+}
